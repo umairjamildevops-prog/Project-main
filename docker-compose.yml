@@ -1,0 +1,11 @@
+version: "3.8"
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    # after CI pushes to Docker Hub, you can switch to:
+    # image: <your-dockerhub-username>/my-flask-cicd:latest
+
